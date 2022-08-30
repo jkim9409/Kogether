@@ -14,6 +14,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
     next();
 });
 
+
 const errorHandler: ErrorRequestHandler = (err, req: Request, res: Response, next: NextFunction) =>{
     res.status(err.status || 500)
     res.send({
@@ -24,6 +25,5 @@ const errorHandler: ErrorRequestHandler = (err, req: Request, res: Response, nex
 
 
 app.use(errorHandler);
-
 
 const server: Server = app.listen(PORT, ()=> console.log('Listening to port 3000'))
