@@ -25,17 +25,6 @@ async function createApolloServer(port: number) {
 
   createApolloServer(3000);
 
-<<<<<<< HEAD
-
-const errorHandler: ErrorRequestHandler = (err, req: Request, res: Response, next: NextFunction) =>{
-    res.status(err.status || 500)
-    res.send({
-        status: err.staus || 500,
-        message: err.message
-    })
-};
-=======
->>>>>>> 7adee69e3e51b73d177e33aa28b109868de574dc
 
 // const PORT: Number = Number(process.env.PORT) || 3000;
 // const app: Application = express()
@@ -44,9 +33,7 @@ const errorHandler: ErrorRequestHandler = (err, req: Request, res: Response, nex
 //     res.send('hello from ts app');
 // });
 
-<<<<<<< HEAD
-const server: Server = app.listen(PORT, ()=> console.log('Listening to port 3000'))
-=======
+
 
 // app.use((req: Request, res: Response, next: NextFunction) => {
 //     next();
@@ -65,4 +52,4 @@ const server: Server = app.listen(PORT, ()=> console.log('Listening to port 3000
 
 
 // const server: Server = app.listen(PORT, ()=> console.log('Listening to port 3000'))
->>>>>>> 7adee69e3e51b73d177e33aa28b109868de574dc
+

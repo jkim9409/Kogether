@@ -6,7 +6,16 @@ export class User {
   id!: string
 
   @Field(type => String) // name: String!
-  name!: string
+  firstName!: string
+
+  @Field(type => String) // name: String!
+  middleName!: string
+
+  @Field(type => String) // name: String!
+  lastName!: string
+
+  @Field(type => String) // name: String!
+  phoneNumber!: string
 
   @Field(type => String) // name: String!
   email!: string
