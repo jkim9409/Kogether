@@ -20,7 +20,6 @@ async function createApolloServer(port: number) {
   
     return { server, app }
 
-
   }
 
   createApolloServer(3000);
@@ -32,8 +31,6 @@ async function createApolloServer(port: number) {
 // app.get('/', (req: Request, res: Response, next: NextFunction) => {
 //     res.send('hello from ts app');
 // });
-
-
 
 // app.use((req: Request, res: Response, next: NextFunction) => {
 //     next();
@@ -49,7 +46,6 @@ async function createApolloServer(port: number) {
 
 
 // app.use(errorHandler);
-
 
 // const server: Server = app.listen(PORT, ()=> console.log('Listening to port 3000'))
 

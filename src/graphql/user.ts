@@ -24,8 +24,11 @@ export class User {
   passward!: string
 
   @Field(type => String) // name: String!
-  nickname!: string
-  
+  profileImage!: string
+
+  @Field(type => String) // name: String!
+  aboutMe!: string
+
   @Field(type => Int, { nullable: true }) // point: Int
   rating?: number
 }
