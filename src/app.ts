@@ -1,5 +1,5 @@
 import express, {Request, Response, NextFunction, Application, ErrorRequestHandler} from "express";
-import {Server} from "http";
+import { graphqlHTTP } from "express-graphql";
 import { buildSchema } from 'type-graphql';
 import { ApolloServer} from 'apollo-server-express';
 import createHttpError from "http-errors";
